@@ -80,12 +80,33 @@ public class Signin_page extends PageBaseClass {
 		logger.log(Status.PASS, "Entered the Password : " + password);
 	}
 	
-	public Private_Sales submitLogin(){
+	/*public Private_Sales submitLogin(){
 		submitLogin_button.click();
 		logger.log(Status.PASS, "Cliecked the Submit Login Button");
 		Private_Sales privatesales = new Private_Sales(driver, logger);
 		PageFactory.initElements(driver, privatesales);
 		return privatesales;
+	}*/
+	
+	
+	/* public Departments submitLogin(){
+		
+		submitLogin_button.click();
+		logger.log(Status.PASS, "Clicked the Submit Login Button");
+		System.out.println("Clicked the Submit Login Button");
+		Departments departobject = new Departments(driver, logger);
+		PageFactory.initElements(driver, departobject);
+		return departobject;
+	}*/
+
+	public ChristiesLocation saleroomclick(){
+		
+		submitLogin_button.click();
+		logger.log(Status.PASS, "Clicked the Submit Login Button");
+		System.out.println("Clicked the Submit Login Button");
+		ChristiesLocation location = new ChristiesLocation(driver, logger);
+		PageFactory.initElements(driver, location);
+		return location;
 	}
 	
 	public void verifyPasswordField(){

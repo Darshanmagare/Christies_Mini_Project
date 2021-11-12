@@ -75,6 +75,14 @@ public class PageBaseClass extends BaseTestClass {
 		}
 		
 	}
+	 /********allow cookies************/
+    public LandingPage allowcookies() {
+
+        driver.findElement(By.xpath("//*[@id='onetrust-accept-btn-handler']")).click();
+        LandingPage landingPage = new LandingPage(driver, logger);
+        PageFactory.initElements(driver, landingPage);
+        return landingPage;
+    }
 	
 	/****************** Select value From DropDown ***********************/
 	public void selectDropDownValue(WebElement webElement, String value){

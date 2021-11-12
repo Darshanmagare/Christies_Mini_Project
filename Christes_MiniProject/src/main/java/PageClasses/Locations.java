@@ -11,5 +11,7 @@ public class Locations extends PageBaseClass {
 	public Locations(WebDriver driver, ExtentTest logger) {
 		super(driver, logger);
 		
+		
+		
 	}
 }
